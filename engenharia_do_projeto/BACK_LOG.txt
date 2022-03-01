@@ -1,0 +1,29 @@
+#############################################################################################
+######################################### BACK LOG ##########################################
+#############################################################################################
+
+---> Lupulo
+		Realizar adição de aba para óleos essenciais
+		
+---> Levedura 
+		Criar área de análise e reaproveitamento
+		Área de estoque apropriado apenas para catalogo,
+			histórico de reaproveitamento com calculo de viabilidade
+			
+---> Cadastros Parametros
+		Estilo
+		Equipamento Brasagem
+		Perfil de Mostura
+		Perfil de Fermentação
+		
+---> Receita
+		Ajustar como esta para funcionar
+		Aba de Rótulo
+		
+---> Relatórios
+		Exportar e importar insumo
+		Relatório de receita
+		Geração de rotulo automática, visualização e impressão A4
+		
+---> Criar funcionalidades no hardware para painel de operação		
+---> Criar funcionalidades no hardware para monitor de fermentação

@@ -1,0 +1,53 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/email.png</file>
+    <file>icons/logo4.png</file>
+    <file>icons/menu.png</file>
+    <file>icons/menu1.png</file>
+    <file>icons/menu2.png</file>
+    <file>icons/whatsApp.png</file>
+    <file>icons/Youtube.png</file>
+    <file>icons/disquete.png</file>
+    <file>icons/novos_icones/atencao.png</file>
+    <file>icons/novos_icones/bandeira.png</file>
+    <file>icons/novos_icones/barril.png</file>
+    <file>icons/novos_icones/cardapio (1).png</file>
+    <file>icons/novos_icones/cardapio.png</file>
+    <file>icons/novos_icones/casa.png</file>
+    <file>icons/novos_icones/cerveja (1).png</file>
+    <file>icons/novos_icones/cerveja (2).png</file>
+    <file>icons/novos_icones/cerveja (3).png</file>
+    <file>icons/novos_icones/cerveja (4).png</file>
+    <file>icons/novos_icones/cerveja-caseira.png</file>
+    <file>icons/novos_icones/cerveja.png</file>
+    <file>icons/novos_icones/cervejaria (2).png</file>
+    <file>icons/novos_icones/cervejaria (3).png</file>
+    <file>icons/novos_icones/cervejaria.png</file>
+    <file>icons/novos_icones/comercial.png</file>
+    <file>icons/novos_icones/compartilhar.png</file>
+    <file>icons/novos_icones/computacao-em-nuvem (1).png</file>
+    <file>icons/novos_icones/computacao-em-nuvem.png</file>
+    <file>icons/novos_icones/controles.png</file>
+    <file>icons/novos_icones/definicoes (1).png</file>
+    <file>icons/novos_icones/definicoes.png</file>
+    <file>icons/novos_icones/editar.png</file>
+    <file>icons/novos_icones/erro.png</file>
+    <file>icons/novos_icones/fermentacao.png</file>
+    <file>icons/novos_icones/garrafa-de-cerveja.png</file>
+    <file>icons/novos_icones/internet.png</file>
+    <file>icons/novos_icones/levedura.png</file>
+    <file>icons/novos_icones/linguica.png</file>
+    <file>icons/novos_icones/mais.png</file>
+    <file>icons/novos_icones/moinho.png</file>
+    <file>icons/novos_icones/nuvem.png</file>
+    <file>icons/novos_icones/pulo.png</file>
+    <file>icons/novos_icones/repetir.png</file>
+    <file>icons/novos_icones/saida.png</file>
+    <file>icons/novos_icones/salgadinhos.png</file>
+    <file>icons/novos_icones/salve-.png</file>
+    <file>icons/novos_icones/sucesso.png</file>
+    <file>icons/novos_icones/trigo.png</file>
+    <file>icons/novos_icones/status_desligado.png</file>
+    <file>icons/novos_icones/status_ligado.png</file>
+  </qresource>
+</RCC>

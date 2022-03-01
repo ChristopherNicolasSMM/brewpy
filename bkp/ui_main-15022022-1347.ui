@@ -1,0 +1,2899 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>823</width>
+    <height>487</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*Copyright (c) DevSec Studio. All rights reserved.
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+/*-----Header Table-----*/
+ QHeaderView::section
+ { 
+ color:white; 
+ background-color:#232326; 
+ }
+ 
+/*-----QWidget-----*/
+QWidget
+{
+	background-color: #202020;
+	color: #fff;
+	selection-background-color: #ff732d; 
+	selection-color: #000;
+
+}
+
+
+/*-----QLabel-----*/
+QLabel
+{
+	background-color: transparent;
+	color: #ff732d;
+	font-weight: bold;
+	font-size: 10px;
+
+}
+
+
+QLabel:disabled 
+{
+	color: #4e4e4e;
+
+}
+
+
+/*-----QMenuBar-----*/
+QMenuBar 
+{
+	background-color: #252525;
+	border: none;
+	color: #ff732d;
+	font-weight: bold;
+	font-size: 11px;
+
+}
+
+
+QMenuBar:disabled 
+{
+	color: #4e4e4e;
+
+}
+
+
+QMenuBar::item 
+{
+	background-color: transparent;
+
+}
+
+
+QMenuBar::item:selected 
+{
+	background-color: transparent;
+	color: #fff;
+
+}
+
+
+QMenuBar::item:pressed 
+{
+	background-color: #424242;
+	border: none;
+	color: #fff;
+
+}
+
+
+/*-----QMenu-----*/
+QMenu
+{
+    background-color: #424242;
+    border: none;
+    padding: 4px;
+    padding-right: 0px;
+	color: #fff;
+	font-size: 11px;
+
+}
+
+
+QMenu::item
+{
+    background-color: transparent;
+    padding: 2px 20px 2px 20px;
+
+}
+
+
+QMenu::item:disabled
+{
+    color: #555;
+    background-color: transparent;
+    padding: 2px 20px 2px 20px;
+
+}
+
+
+QMenu::item:selected
+{
+    background-color: #ff732d;
+    color: #000;
+	font-weight: bold;
+
+}
+
+
+QMenu::separator
+{
+	background-color: #aaa;	
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 1px;
+
+}
+
+
+/*-----QTabBar-----*/
+QTabBar 
+{
+	background-color: transparent;
+	font-size: 10px;
+}
+
+
+QTabWidget::tab-bar 
+{
+	border:none;
+	left: 0px;
+
+}
+
+
+QTabBar::tab 
+{
+	font-weight: bold;
+	padding-left: 15px; 
+	padding-right: 15px; 
+	height: 25px;
+	width: 60px;
+}
+
+
+QTabWidget::pane 
+{
+	border: 1px solid #333; 
+
+}
+
+
+QTabBar::tab:!selected 
+{
+	color: #ff732d; 
+	font-weight: bold;
+	border: 1px solid #1b1b1b;
+	background-color: #1b1b1b;
+}
+
+
+QTabBar::tab:selected 
+{
+	background-color: #424242;
+	border: 1px solid #414141;
+	color: #fff;
+
+}
+
+
+QTabBar:tab:selected:disabled 
+{
+	color: #4e4e4e;
+
+}
+
+
+QTabBar::tab:!selected:hover 
+{
+	color: #fff; 
+
+}
+
+
+QTabBar:tab:!selected:disabled 
+{
+	color: #4e4e4e;
+
+}
+
+
+/*-----QToolButton-----*/
+QToolButton 
+{
+	background-color: transparent;
+	color: #ff732d;
+	font-weight: bold;
+	font-size: 10px;
+	border: none;
+	margin: 2px;
+	
+}
+
+
+QToolButton:hover
+{
+	background-color: #ff732d;
+	color: #000;
+	
+}
+
+
+QToolButton:pressed
+{
+	background-color: #424242;
+	color: #fff;
+
+}
+
+
+QToolButton:checked
+{
+	background-color: #424242;
+	color: #fff;
+
+}
+
+
+QToolButton:disabled 
+{
+	color: #4e4e4e;
+
+}
+
+
+/*-----QDockWidget-----*/
+QDockWidget
+{
+	color : #ff732d;
+	font-weight: bold;
+	font-size: 11px;
+
+}
+
+
+QDockWidget::disabled
+{
+	color: #656565;
+
+}
+
+
+QDockWidget::title 
+{
+	background-color: transparent;
+	border: 1px solid #3a3a3a;
+	padding: 5px;
+
+}
+
+
+QDockWidget::close-button
+{
+	max-width: 14px;
+	max-height: 14px;
+	margin-top:1px;
+
+}
+
+
+QDockWidget::float-button
+{
+	max-width: 14px;
+	max-height: 14px;
+	margin-top:1px;
+
+}
+
+
+QDockWidget::close-button:hover
+{
+	border: none;
+	background-color: #ff732d;
+
+}
+
+
+QDockWidget::float-button:hover
+{
+	border: none;
+	background-color: #ff732d;
+
+}
+
+
+/*-----QTreeWidget-----*/
+QTreeWidget
+{
+	show-decoration-selected: 0;
+	selection-background-color: transparent; /* Used on Mac */
+	selection-color: #fff; /* Used on Mac */
+	background-color: #292929;
+	border: 1px solid #3a3a3a;
+	padding: 5px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 11px;
+
+}
+
+
+QTreeView::disabled
+{
+	color: #656565;
+
+}
+
+
+QTreeView::item:selected
+{
+	color: #000;
+	background-color: #ff732d;
+
+}
+
+
+QTreeView::item:!selected:hover
+{
+	background-color: #424242;
+	color: #fff;
+}
+
+
+QTreeView::item:selected:disabled
+{
+	background-color: #656565;
+	color: #333;
+
+}
+
+
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings 
+{
+	image: url(://tree-closed.png);
+
+}
+
+
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings  
+{
+	image: url(://tree-open.png);
+
+}
+
+
+/*-----QLineEdit-----*/
+QLineEdit
+{
+	color: black;
+	font-weight: bold;
+	background-color: #9d9d9d;
+	border: 1px solid #3a3a3a;
+	padding: 2px;
+
+}
+
+QLineEdit:hover 
+{
+	background-color: #bebebe;
+
+}
+
+
+QLineEdit::disabled
+{
+	color: #656565;
+
+}
+
+
+/*-----QGroupBox-----*/
+QGroupBox 
+{
+	color: #ff732d;
+    border: 1px solid #3a3a3a;
+	background-color: #1b1b1b;
+    margin-top: 5.5ex;
+	font-weight: bold;
+	font-size: 11px;
+
+}
+
+
+QGroupBox::disabled
+{
+	color: #656565;
+
+}
+
+
+QGroupBox::title 
+{
+	background-color: #1b1b1b;
+	border: 1px solid #3a3a3a;
+    subcontrol-origin: margin;
+	subcontrol-position: top right 0px;
+	border-radius: 0px;
+    padding: 3px 30px;
+
+}
+
+
+/*-----QComboBox-----*/
+QComboBox 
+{
+	background-color: #424242;
+	border: 1px solid #3a3a3a;
+	color: #fff;
+	font-weight: bold;
+	font-size: 11px;
+	padding: 2px;
+
+}
+
+
+QComboBox::disabled
+{
+	color: #656565;
+
+}
+
+
+QComboBox:editable 
+{
+    background: transparent;
+
+}
+
+
+QComboBox::drop-down 
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+	background-color: #424242;
+    border-left-width:1px;
+    border-left-color: #777777;
+    border-left-style: solid; 
+
+}
+
+
+QComboBox::down-arrow 
+{
+    image: url(://arrow-down.png);
+	width:8px;
+	height:8px;
+
+}
+
+
+QComboBox::down-arrow:on 
+{ 
+    top: 1px;
+    left: 1px;
+
+}
+
+
+QComboBox QListView
+{
+	background-color: #292929;
+    border-left-style: solid; 
+	selection-background-color: #ff732d;
+	selection-color: #000;
+	color: #fff;
+	padding: 10px;
+	border: none;
+
+}
+
+
+/*-----QCheckBox-----*/
+QCheckBox
+{
+	background-color: transparent;
+	color: #fff;
+	font-weight: bold;
+	font-size: 10px;
+
+}
+
+
+QCheckBox::indicator
+{
+    color: #b1b1b1;
+    background-color: #00111d;
+    border: 1px solid #ff732d;
+    width: 10px;
+    height: 10px;
+
+}
+
+
+QCheckBox::indicator:checked
+{
+    image:url(&quot;./ressources/check.png&quot;); /*To replace*/
+	background-color: #ff732d;
+    border: 1px solid #ff732d;
+
+}
+
+
+QCheckBox::indicator:unchecked:hover
+{
+    border: 1px solid #ff732d;
+
+}
+
+
+QCheckBox::disabled
+{
+	color: #656565;
+
+}
+
+
+QCheckBox::indicator:disabled
+{
+	background-color: #656565;
+	color: #656565;
+    border: 1px solid #656565;
+
+}
+
+
+/*-----QSpinBox-----*/
+QSpinBox 
+{
+    border: 1px solid #3a3a3a;
+	min-height: 20px;
+	min-width: 30px;
+    border-radius : 2px;
+	color : #ff732d;
+	font-weight: bold;
+	font-size: 10px;
+    background-color: #000;
+
+}
+
+
+QSpinBox:hover 
+{
+	background-color: #333;
+
+}
+
+
+QSpinBox::up-button 
+{
+	background-color: #777777;
+    width: 16px; 
+    border-width: 1px;
+
+}
+
+
+QSpinBox::up-button:hover 
+{
+	background-color: #585858;
+
+}
+
+
+QSpinBox::up-button:pressed 
+{
+	background-color: #252525;
+    width: 16px; 
+    border-width: 1px;
+
+}
+
+
+QSpinBox::up-arrow 
+{
+    image: url(://arrow-up.png);
+    width: 7px;
+    height: 7px;
+
+}
+
+
+QSpinBox::down-button 
+{
+	border-bottom-right-radius:2px;
+	background-color: #777777;
+    width: 16px; 
+    border-width: 1px;
+
+}
+
+
+QSpinBox::down-button:hover 
+{
+	background-color: #585858;
+
+}
+
+QSpinBox::down-button:pressed 
+{
+	background-color: #252525;
+    width: 16px; 
+    border-width: 1px;
+
+}
+
+
+QSpinBox::down-arrow 
+{
+    image: url(://arrow-down.png);
+    width: 7px;
+    height: 7px;
+
+}
+
+
+/*-----QRadioButton-----*/
+QRadioButton{
+	background-color: transparent;
+	font-weight: bold;
+	color: #fff;
+
+}
+
+
+QRadioButton::indicator::unchecked
+{ 
+	border: 2px inset #424242; 
+	border-radius: 6px; 
+	background-color:  #323232;
+	width: 9px; 
+	height: 9px; 
+
+}
+
+
+QRadioButton::indicator::unchecked:hover
+{ 
+	border: 2px solid #ff732d; 
+	border-radius: 5px; 
+	background-color:  #323232;
+	width: 9px; 
+	height: 9px; 
+
+}
+
+
+QRadioButton::indicator::checked
+{ 
+	border: 2px inset #424242; 
+	border-radius: 5px; 
+	background-color: #ff732d; 
+	width: 9px; 
+	height: 9px; 
+
+}
+
+
+QRadioButton::disabled
+{
+	color: #656565;
+
+}
+
+
+QRadioButton::indicator:disabled
+{
+	background-color: #656565;
+	color: #656565;
+    border: 2px solid #656565;
+
+}
+
+
+/*-----QStatusBar-----*/
+QStatusBar 
+{
+	color: #ff732d;
+	font-weight: bold;
+	background-color: #252525;
+
+}
+
+
+QStatusBar::item 
+{
+	background-color: transparent;
+	color: #fff;
+
+}
+
+
+/*-----QSizeGrip-----*/
+QSizeGrip 
+{
+	background-color: image(&quot;./ressources/sizegrip.png&quot;); /*To replace*/
+
+}
+</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>5</number>
+    </property>
+    <property name="leftMargin">
+     <number>5</number>
+    </property>
+    <property name="topMargin">
+     <number>5</number>
+    </property>
+    <property name="rightMargin">
+     <number>5</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="menu">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>-10</x>
+            <y>0</y>
+            <width>191</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-style:italic;&quot;&gt;DevBrew&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QToolBox" name="toolBox">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="principal_pgtool">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>106</width>
+               <height>354</height>
+              </rect>
+             </property>
+             <attribute name="label">
+              <string>Menu Principal</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
+               <widget class="QPushButton" name="inicio_btn">
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="text">
+                 <string>Inicio</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="icons.qrc">
+                  <normaloff>:/icons/icons/novos_icones/casa.png</normaloff>:/icons/icons/novos_icones/casa.png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="cadastros_btn">
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="text">
+                 <string>Cadastros</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="insumos_btn">
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="text">
+                 <string> Insumos</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="icons.qrc">
+                  <normaloff>:/icons/icons/novos_icones/salgadinhos.png</normaloff>:/icons/icons/novos_icones/salgadinhos.png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="receitas_btn">
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="text">
+                 <string>Receitas</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="icons.qrc">
+                  <normaloff>:/icons/icons/novos_icones/cerveja.png</normaloff>:/icons/icons/novos_icones/cerveja.png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="parametros_btn">
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="text">
+                 <string>Parametros</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="icons.qrc">
+                  <normaloff>:/icons/icons/novos_icones/controles.png</normaloff>:/icons/icons/novos_icones/controles.png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="painel_btn">
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="text">
+                 <string>Painel</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="icons.qrc">
+                  <normaloff>:/icons/icons/novos_icones/cerveja (1).png</normaloff>:/icons/icons/novos_icones/cerveja (1).png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="opcoes_pgtool">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>93</width>
+               <height>371</height>
+              </rect>
+             </property>
+             <attribute name="label">
+              <string>Suporte</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_20">
+              <item>
+               <widget class="QPushButton" name="contato_btn">
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="text">
+                 <string>Contato</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="icons.qrc">
+                  <normaloff>:/icons/icons/novos_icones/comercial.png</normaloff>:/icons/icons/novos_icones/comercial.png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="principal">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>6</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="header">
+         <property name="minimumSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="toggle_btn">
+            <property name="minimumSize">
+             <size>
+              <width>32</width>
+              <height>34</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{aling:left;}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="icons.qrc">
+              <normaloff>:/icons/icons/menu2.png</normaloff>:/icons/icons/menu2.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
+            </property>
+            <property name="autoDefault">
+             <bool>false</bool>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="atualizar_btn">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="icons.qrc">
+              <normaloff>:/icons/icons/novos_icones/repetir.png</normaloff>:/icons/icons/novos_icones/repetir.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="save_btn">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="icons.qrc">
+              <normaloff>:/icons/icons/novos_icones/salve-.png</normaloff>:/icons/icons/novos_icones/salve-.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="exit_btn">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="icons.qrc">
+              <normaloff>:/icons/icons/novos_icones/saida.png</normaloff>:/icons/icons/novos_icones/saida.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="body">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SetMaximumSize</enum>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QStackedWidget" name="paginacao">
+            <property name="currentIndex">
+             <number>6</number>
+            </property>
+            <widget class="QWidget" name="inicio_pg">
+             <layout class="QVBoxLayout" name="verticalLayout_15">
+              <item>
+               <widget class="QLabel" name="label_4">
+                <property name="styleSheet">
+                 <string notr="true">image: url(:/icons/imgs/logo1.png);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="suporte_pg">
+             <layout class="QVBoxLayout" name="verticalLayout_16">
+              <item>
+               <widget class="QLabel" name="label_6">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#ca610b;&quot;&gt;Este sofware é gratuíto!&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:400; color:#ca610b;&quot;&gt;Ajude o desenvolvedor com uma doação,&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:400; color:#ca610b;&quot;&gt;assim o sistema pode continuar a evoluir.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_4">
+                <item>
+                 <widget class="QLabel" name="label_5">
+                  <property name="styleSheet">
+                   <string notr="true">image: url(:/icons/imgs/ajude o desenvolvedor.png);</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_7">
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#ca610b;&quot;&gt;Nome: &lt;/span&gt;&lt;span style=&quot; font-size:16pt; font-style:italic; color:#ca610b;&quot;&gt;Christopher Nicolas Mauricio&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#ca610b;&quot;&gt;Chave PIX: 434.127.878-92&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#ca610b;&quot;&gt;Caso necessite de suporte entre em contato pelo email:&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#13bdb2;&quot;&gt;christopher.nicolas.mauricio@gmail.com&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="painel_pg"/>
+            <widget class="QWidget" name="parametros_pg"/>
+            <widget class="QWidget" name="receitas_pg"/>
+            <widget class="QWidget" name="cadastros_pg">
+             <layout class="QVBoxLayout" name="verticalLayout_17">
+              <item>
+               <widget class="QTabWidget" name="cadastro_tabw">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="currentIndex">
+                 <number>2</number>
+                </property>
+                <widget class="QWidget" name="malte_aba">
+                 <attribute name="title">
+                  <string>Malte</string>
+                 </attribute>
+                 <layout class="QGridLayout" name="gridLayout">
+                  <item row="0" column="0" colspan="4">
+                   <widget class="QLabel" name="label_8">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Nome ou descrição&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="4" colspan="2">
+                   <widget class="QLabel" name="label_9">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Origem&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="6">
+                   <widget class="QLabel" name="label_10">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Fabricante&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0" colspan="4">
+                   <widget class="QLineEdit" name="descricao_malte_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="4" colspan="2">
+                   <widget class="QLineEdit" name="origem_malte_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="6">
+                   <widget class="QLineEdit" name="fabricante_malte_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0" colspan="2">
+                   <widget class="QLabel" name="label_12">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Tipo&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2">
+                   <widget class="QLabel" name="label_11">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Quant. Max%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="3" colspan="2">
+                   <widget class="QLabel" name="label_13">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Cor SRM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="5">
+                   <widget class="QLabel" name="label_14">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Preço Kg&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="6">
+                   <widget class="QLabel" name="label_19">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Ext. IBU L/Kg&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0" colspan="2">
+                   <widget class="QComboBox" name="tipo_malte_cb">
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="2">
+                   <widget class="QLineEdit" name="qntmax_malte_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="3" colspan="2">
+                   <widget class="QLineEdit" name="cor_malte_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="5">
+                   <widget class="QLineEdit" name="preco_malte_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="6">
+                   <widget class="QLineEdit" name="extibulkg_malte_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="label_15">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Potencial SG&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1" colspan="2">
+                   <widget class="QLabel" name="label_16">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Aproveitamento&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="4" colspan="2">
+                   <widget class="QLabel" name="label_17">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;P. Diastático&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="6">
+                   <widget class="QLabel" name="label_18">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Proteína&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="0">
+                   <widget class="QLineEdit" name="potencial_sg_malte_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="1" colspan="3">
+                   <widget class="QLineEdit" name="aproveitamento_malte_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="4" colspan="2">
+                   <widget class="QLineEdit" name="poder_diastatico_malte_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="6">
+                   <widget class="QLineEdit" name="proteina_malte_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="0" colspan="3">
+                   <widget class="QLabel" name="label_20">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Anotações e observações&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="6" rowspan="2">
+                   <widget class="QGroupBox" name="groupBox">
+                    <property name="title">
+                     <string>Opções de uso</string>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_18">
+                     <item>
+                      <widget class="QCheckBox" name="usar_mostura_malte_cbx">
+                       <property name="text">
+                        <string>Usar na mostura</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QCheckBox" name="usar_fervura_malte_cbx">
+                       <property name="text">
+                        <string>Usar na fervura</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QCheckBox" name="nao_fermentavel_malte_cbx">
+                       <property name="text">
+                        <string>Não Fermentável</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="7" column="0" colspan="6">
+                   <widget class="QTextEdit" name="observacoes_malte_tbx">
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="adjunto_aba">
+                 <attribute name="title">
+                  <string>Adjunto</string>
+                 </attribute>
+                 <layout class="QGridLayout" name="gridLayout_3">
+                  <item row="0" column="0" colspan="3">
+                   <widget class="QLabel" name="label_34">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Nome ou descrição&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="3">
+                   <widget class="QLabel" name="label_36">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Tipo&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="4">
+                   <widget class="QLabel" name="label_35">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Fabricante&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0" colspan="3">
+                   <widget class="QLineEdit" name="descricao_adjunto_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="3">
+                   <widget class="QComboBox" name="tipo_adjunto_cb">
+                    <property name="minimumSize">
+                     <size>
+                      <width>100</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="4">
+                   <widget class="QLineEdit" name="fabricante_adjunto_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_37">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Máximo por litro (g)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QLabel" name="label_33">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Preço Kg&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2" colspan="2">
+                   <widget class="QLabel" name="label_38">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Indicação breve&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLineEdit" name="maximo_por_litro_adjunto_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QLineEdit" name="preco_adjunto_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="2" colspan="3">
+                   <widget class="QLineEdit" name="indicacao_breve_adjunto_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0" colspan="2">
+                   <widget class="QLabel" name="label_32">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Anotações e observações&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="0" colspan="5">
+                   <widget class="QTextEdit" name="observacoes_adjunto_tbx">
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="levedura_aba">
+                 <attribute name="title">
+                  <string>Levedura</string>
+                 </attribute>
+                 <layout class="QGridLayout" name="gridLayout_4">
+                  <item row="0" column="0" colspan="3">
+                   <widget class="QLabel" name="label_39">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Nome&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="3">
+                   <widget class="QLabel" name="label_44">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Sigla&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="4" colspan="2">
+                   <widget class="QLabel" name="label_40">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Laboratório&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="6">
+                   <widget class="QLabel" name="label_43">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Preço Un.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0" colspan="3">
+                   <widget class="QLineEdit" name="descricao_levedura_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="3">
+                   <widget class="QLineEdit" name="sigla_levedura_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="4" colspan="2">
+                   <widget class="QLineEdit" name="laboratorio_levedura_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="6">
+                   <widget class="QLineEdit" name="preco_levedura_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_42">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Formato&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QLabel" name="label_45">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Floculação&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2" colspan="3">
+                   <widget class="QLabel" name="label_46">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Viabilidade %&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="5">
+                   <widget class="QLabel" name="label_47">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Gramas Un.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="6">
+                   <widget class="QLabel" name="label_52">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;C. Pacote&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QComboBox" name="formato_malte_cb">
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QComboBox" name="floculacao_malte_cb">
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="2" colspan="3">
+                   <widget class="QLineEdit" name="viabilidade_levedura_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="5">
+                   <widget class="QLineEdit" name="gramas_unidade_levedura_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="6">
+                   <widget class="QLineEdit" name="celulas_por_pacote_levedura_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0" colspan="2">
+                   <widget class="QGroupBox" name="groupBox_4">
+                    <property name="minimumSize">
+                     <size>
+                      <width>280</width>
+                      <height>100</height>
+                     </size>
+                    </property>
+                    <property name="title">
+                     <string>Atenuação</string>
+                    </property>
+                    <widget class="QLineEdit" name="atenuacao_maxima_levedura_tbx">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>60</y>
+                       <width>101</width>
+                       <height>29</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>12</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_48">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>32</y>
+                       <width>91</width>
+                       <height>22</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Máximo&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_49">
+                     <property name="geometry">
+                      <rect>
+                       <x>142</x>
+                       <y>30</y>
+                       <width>71</width>
+                       <height>22</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Minímo&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                    <widget class="QLineEdit" name="atenuacao_minima_levedura_tbx">
+                     <property name="geometry">
+                      <rect>
+                       <x>142</x>
+                       <y>58</y>
+                       <width>101</width>
+                       <height>29</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>12</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_53">
+                     <property name="geometry">
+                      <rect>
+                       <x>114</x>
+                       <y>55</y>
+                       <width>21</width>
+                       <height>41</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_55">
+                     <property name="geometry">
+                      <rect>
+                       <x>247</x>
+                       <y>55</y>
+                       <width>21</width>
+                       <height>41</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="4" column="2" colspan="4">
+                   <widget class="QGroupBox" name="groupBox_3">
+                    <property name="minimumSize">
+                     <size>
+                      <width>240</width>
+                      <height>100</height>
+                     </size>
+                    </property>
+                    <property name="title">
+                     <string>Temperatura</string>
+                    </property>
+                    <widget class="QLabel" name="label_50">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>30</y>
+                       <width>71</width>
+                       <height>22</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Máxima&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                    <widget class="QLineEdit" name="temperatura_maxima_levedura_tbx">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>58</y>
+                       <width>81</width>
+                       <height>29</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>12</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_51">
+                     <property name="geometry">
+                      <rect>
+                       <x>128</x>
+                       <y>30</y>
+                       <width>71</width>
+                       <height>22</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Miníma&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                    <widget class="QLineEdit" name="temperatura_minima_levedura_tbx">
+                     <property name="geometry">
+                      <rect>
+                       <x>128</x>
+                       <y>58</y>
+                       <width>81</width>
+                       <height>29</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>12</pointsize>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_54">
+                     <property name="geometry">
+                      <rect>
+                       <x>94</x>
+                       <y>55</y>
+                       <width>21</width>
+                       <height>41</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Cº&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_56">
+                     <property name="geometry">
+                      <rect>
+                       <x>213</x>
+                       <y>55</y>
+                       <width>21</width>
+                       <height>41</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Cº&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="4" column="6">
+                   <widget class="QGroupBox" name="groupBox_2">
+                    <property name="minimumSize">
+                     <size>
+                      <width>80</width>
+                      <height>100</height>
+                     </size>
+                    </property>
+                    <property name="title">
+                     <string>Familia</string>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_19">
+                     <item>
+                      <widget class="QCheckBox" name="ale_levedura_cbx">
+                       <property name="text">
+                        <string>Ale</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QCheckBox" name="lager_levedura_cbx">
+                       <property name="text">
+                        <string>Lager</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="5" column="0" colspan="2">
+                   <widget class="QLabel" name="label_41">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Anotações e observações&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="0" colspan="7">
+                   <widget class="QTextEdit" name="observacoes_levedura_tbx">
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="lupulo_aba">
+                 <attribute name="title">
+                  <string>Lupúlo</string>
+                 </attribute>
+                 <layout class="QGridLayout" name="gridLayout_2">
+                  <item row="5" column="0" colspan="9">
+                   <widget class="QTextEdit" name="observacoes_lupulo_tbx">
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="7" colspan="2">
+                   <widget class="QLabel" name="label_21">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Fabricante&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="5">
+                   <widget class="QLabel" name="label_30">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="4" colspan="3">
+                   <widget class="QLineEdit" name="origem_lupulo_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="7" colspan="2">
+                   <widget class="QLineEdit" name="fabricante_lupulo_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QLabel" name="label_27">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Formato&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="8">
+                   <widget class="QLineEdit" name="acido_beta_lupulo_tbx">
+                    <property name="maximumSize">
+                     <size>
+                      <width>100</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="3" colspan="2">
+                   <widget class="QLineEdit" name="preco_lupulo_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="6">
+                   <widget class="QLabel" name="label_28">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;A.Alfa %&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="4" colspan="3">
+                   <widget class="QLabel" name="label_25">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Origem&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0" colspan="4">
+                   <widget class="QLineEdit" name="descricao_lupulo_tbx">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QComboBox" name="tipo_lupulo_tbx">
+                    <property name="minimumSize">
+                     <size>
+                      <width>120</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QComboBox" name="formato_lupulo_tbx">
+                    <property name="minimumSize">
+                     <size>
+                      <width>120</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0" colspan="2">
+                   <widget class="QLabel" name="label_23">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Anotações e observações&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="3" colspan="2">
+                   <widget class="QLabel" name="label_22">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Preço Kg&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="8">
+                   <widget class="QLabel" name="label_29">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;A.Beta %&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="6" colspan="2">
+                   <widget class="QLineEdit" name="acido_alfa_lupulo_tbx">
+                    <property name="maximumSize">
+                     <size>
+                      <width>100</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_26">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Tipo&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0" colspan="4">
+                   <widget class="QLabel" name="label_24">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#d6d6d6;&quot;&gt;Nome ou descrição&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="2">
+                   <widget class="QLabel" name="label_31">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="insumos_pg">
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <widget class="QFrame" name="frame_3">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="MinimumExpanding" vsizetype="Maximum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_8">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_2">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QLineEdit" name="pesquisar_insumo_tbx">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>24</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="pesquisar_insumo_btn">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>24</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>Pesquisar</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_3">
+                     <property name="minimumSize">
+                      <size>
+                       <width>10</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_4">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                 <item>
+                  <widget class="QFrame" name="frame_5">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_10">
+                    <item>
+                     <widget class="QTabWidget" name="insumos_tbw">
+                      <property name="currentIndex">
+                       <number>0</number>
+                      </property>
+                      <widget class="QWidget" name="view_malte_tab">
+                       <attribute name="title">
+                        <string>Malte</string>
+                       </attribute>
+                       <layout class="QVBoxLayout" name="verticalLayout_11">
+                        <item>
+                         <widget class="QTableWidget" name="malte_tb">
+                          <property name="styleSheet">
+                           <string notr="true"/>
+                          </property>
+                          <property name="dragEnabled">
+                           <bool>false</bool>
+                          </property>
+                          <column>
+                           <property name="text">
+                            <string>Código</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Nome</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Origem</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Fabricante</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Tipo</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Qnt. Max %</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Cor SRM</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Preço</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Ext.IBU %</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Poten.SG %</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Proteína %</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Observações</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Mostura</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Fervura</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Não Fermentável</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Aproveitamento %</string>
+                           </property>
+                          </column>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                      <widget class="QWidget" name="view_lupulo_tab">
+                       <attribute name="title">
+                        <string>Lúpulo</string>
+                       </attribute>
+                       <layout class="QVBoxLayout" name="verticalLayout_12">
+                        <item>
+                         <widget class="QTableWidget" name="lupulo_tb">
+                          <column>
+                           <property name="text">
+                            <string>Código</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Nome</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Origem</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Fabricante</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Tipo</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Formato</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Alfa A %</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Beta A. %</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Preço</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Observações</string>
+                           </property>
+                          </column>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                      <widget class="QWidget" name="view_levedura_tab">
+                       <attribute name="title">
+                        <string>Levedura</string>
+                       </attribute>
+                       <layout class="QVBoxLayout" name="verticalLayout_13">
+                        <item>
+                         <widget class="QTableWidget" name="levedura_tb">
+                          <column>
+                           <property name="text">
+                            <string>Código</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Nome</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Sigla</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Laboratório</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Preço</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Formato</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Floculação %</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Viabilidade %</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>(g) pacote</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Celulas (b-uni)</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Atenuação %</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Temperatura %</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Família</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Observações</string>
+                           </property>
+                          </column>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                      <widget class="QWidget" name="view_adjunto_tab">
+                       <attribute name="title">
+                        <string>Adjunto</string>
+                       </attribute>
+                       <layout class="QVBoxLayout" name="verticalLayout_14">
+                        <item>
+                         <widget class="QTableWidget" name="adjunto_tb">
+                          <column>
+                           <property name="text">
+                            <string>Código</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Nome</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Tipo</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Fabricante</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Max. Litro</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Preço</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Indicação Breve</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Observações</string>
+                           </property>
+                          </column>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_6">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_9">
+                    <item>
+                     <widget class="QLabel" name="label_2">
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="exportar_insumo_btn">
+                      <property name="text">
+                       <string>Exportar</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="icons.qrc">
+                        <normaloff>:/icons/icons/novos_icones/computacao-em-nuvem.png</normaloff>:/icons/icons/novos_icones/computacao-em-nuvem.png</iconset>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="importar_insumo_btn">
+                      <property name="text">
+                       <string>Importar</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="icons.qrc">
+                        <normaloff>:/icons/icons/novos_icones/computacao-em-nuvem (1).png</normaloff>:/icons/icons/novos_icones/computacao-em-nuvem (1).png</iconset>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="criar_receita_insumo_btn">
+                      <property name="text">
+                       <string>Criar Receita</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="icons.qrc">
+                        <normaloff>:/icons/icons/novos_icones/cerveja.png</normaloff>:/icons/icons/novos_icones/cerveja.png</iconset>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="editar_insumo_btn">
+                      <property name="text">
+                       <string>Editar</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="icons.qrc">
+                        <normaloff>:/icons/icons/novos_icones/editar.png</normaloff>:/icons/icons/novos_icones/editar.png</iconset>
+                      </property>
+                      <property name="autoExclusive">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <spacer name="verticalSpacer_2">
+                      <property name="orientation">
+                       <enum>Qt::Vertical</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>20</width>
+                        <height>169</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="footer">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>
