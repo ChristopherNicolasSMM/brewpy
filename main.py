@@ -1,6 +1,6 @@
 from PySide6 import QtCore
 from PySide6.QtCore import QCoreApplication
-from PySide6.QtGui import QIcon 
+from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import (QApplication, QMainWindow, QMessageBox, QTableWidgetItem)
 from ui_main import Ui_MainWindow
 import sys
@@ -18,7 +18,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.setWindowTitle("DevBrew Sistema Cervejeiro - BR")
         appIcon = QIcon(u"logo_sistema.png")
         self.setWindowIcon(appIcon)
-
+        self.atualizar_tabelas()
         #Remove moldura e botões padrão
         self.setWindowFlags(QtCore.Qt.Window | QtCore.Qt.FramelessWindowHint | QtCore.Qt.WindowCloseButtonHint)
 
@@ -174,6 +174,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                     item.setFlags(QtCore.Qt.ItemIsUserCheckable | QtCore.Qt.ItemIsEnabled)
                     item.setCheckState(QtCore.Qt.Unchecked)
                 self.malte_tb.setItem(row, column, item)
+        '''
+        filter_insumo = QtCore.QSortFilterProxyModel()
+        filter_insumo.setSourceModel(self.malte_tb)
+        filter_insumo.setFilterKeyColumn(0)
+
+        self.pesquisar_insumo_tbx.textChanged.connect(filter_insumo.setFilterRegularExpression)
+        '''
         
 
         for row, text in enumerate(tabelas.get('Lupulo')):
@@ -208,9 +215,6 @@ if __name__ == "__main__":
     db = Data_base()
     db.connect()
     db.create_tables()
-
-  
-    #pesquisar_insumo_tbx
 
     app = QApplication(sys.argv)
     window = MainWindow()

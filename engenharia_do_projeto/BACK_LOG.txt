@@ -2,8 +2,12 @@
 ######################################### BACK LOG ##########################################
 #############################################################################################
 
+---> Cadastro Insumo
+		Criar filtro dinâmico
+		
 ---> Lupulo
 		Realizar adição de aba para óleos essenciais
+			Feito apenas no DB
 		
 ---> Levedura 
 		Criar área de análise e reaproveitamento
@@ -17,13 +21,13 @@
 		Perfil de Fermentação
 		
 ---> Receita
-		Ajustar como esta para funcionar
-		Aba de Rótulo
+		Criar inicio de receita via seleção de insumos
+		Criar inicio de receita com opção sem a seleção de insumos inicial
+		Criar tela de filtro e seleção de receitas
 		
 ---> Relatórios
 		Exportar e importar insumo
 		Relatório de receita
-		Geração de rotulo automática, visualização e impressão A4
 		
 ---> Criar funcionalidades no hardware para painel de operação		
 ---> Criar funcionalidades no hardware para monitor de fermentação
