@@ -45,11 +45,11 @@ class Data_base:
               potencial_sg DECIMAL    ,
               poder_diastatico DECIMAL    ,
               proteina DECIMAL    ,
-              observacoes VARCHAR(500)    ,
+              aproveitamento DECIMAL      ,
               usar_mostura BOOL    ,
               usar_fervura BOOL    ,
               nao_fermentavel BOOL    ,
-              aproveitamento INTEGER      ,
+              observacoes VARCHAR(500)    ,
             PRIMARY KEY(nome));
             
             CREATE TABLE IF NOT EXISTS registro (

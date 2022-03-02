@@ -1,6 +1,6 @@
 from PySide6 import QtCore
 from PySide6.QtCore import QCoreApplication
-from PySide6.QtGui import QIcon
+from PySide6.QtGui import QIcon 
 from PySide6.QtWidgets import (QApplication, QMainWindow, QMessageBox, QTableWidgetItem)
 from ui_main import Ui_MainWindow
 import sys
@@ -19,10 +19,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         appIcon = QIcon(u"logo_sistema.png")
         self.setWindowIcon(appIcon)
 
-        
-        
         #Remove moldura e botões padrão
-        #self.setWindowFlags(QtCore.Qt.Window | QtCore.Qt.FramelessWindowHint | QtCore.Qt.WindowCloseButtonHint)
+        self.setWindowFlags(QtCore.Qt.Window | QtCore.Qt.FramelessWindowHint | QtCore.Qt.WindowCloseButtonHint)
 
         ################################################
         #TOGGLE BUTTON
@@ -33,8 +31,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.gv_id_luplulo = 0
         self.gv_id_adjunto = 0
         self.gv_id_levedura = 0
-        ##############################################################################################
-        #Páginas do Sistema
+
+        #Páginas do sistema, menu lateral
         self.inicio_btn.clicked.connect(lambda: self.paginacao.setCurrentWidget(self.inicio_pg))
         self.cadastros_btn.clicked.connect(lambda: self.paginacao.setCurrentWidget(self.cadastros_pg))
         self.insumos_btn.clicked.connect(lambda: self.paginacao.setCurrentWidget(self.insumos_pg))
@@ -42,19 +40,14 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.receitas_btn.clicked.connect(lambda: self.paginacao.setCurrentWidget(self.receitas_pg))
         self.painel_btn.clicked.connect(lambda: self.paginacao.setCurrentWidget(self.painel_pg))
         self.contato_btn.clicked.connect(lambda: self.paginacao.setCurrentWidget(self.suporte_pg))
-        ###############################################################################################
-        '''
-        self.btn_cadastrar.clicked.connect(self.cadastrar_empresas)
-        self.btn_alterar.clicked.connect(self.updata_company)
-        self.btn_excluir.clicked.connect(self.deletar_empresa)
-        self.btn_gerar_excel.clicked.connect(self.gerar_excel_2)
 
-        self.buscar_empresas()
-        '''
-
+        #Menu superior
         self.save_btn.clicked.connect(self.salvar)
         self.atualizar_btn.clicked.connect(self.atualizar_tabelas)
         self.exit_btn.clicked.connect(self.close)
+
+        #Pagina Cadastros Insumos
+        self.criar_receita_insumo_btn.clicked.connect(self.criar_receita)        
 
 
     def salvar(self):
@@ -169,27 +162,55 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.adjunto_tb.setRowCount(len(tabelas.get('Adjunto')))
         self.levedura_tb.setRowCount(len(tabelas.get('Levedura')))
 
+        self.malte_tb.verticalHeader().setVisible(False)
+        self.lupulo_tb.verticalHeader().setVisible(False)
+        self.adjunto_tb.verticalHeader().setVisible(False)
+        self.levedura_tb.verticalHeader().setVisible(False)        
+
         for row, text in enumerate(tabelas.get('Malte')):
             for column, data in enumerate(text):
-                self.malte_tb.setItem(row, column, QTableWidgetItem(str(data)))
+                item = QTableWidgetItem(str(data))
+                if column == 0:
+                    item.setFlags(QtCore.Qt.ItemIsUserCheckable | QtCore.Qt.ItemIsEnabled)
+                    item.setCheckState(QtCore.Qt.Unchecked)
+                self.malte_tb.setItem(row, column, item)
+        
 
         for row, text in enumerate(tabelas.get('Lupulo')):
             for column, data in enumerate(text):
-                self.lupulo_tb.setItem(row, column, QTableWidgetItem(str(data)))  
+                item = QTableWidgetItem(str(data))
+                if column == 0:
+                    item.setFlags(QtCore.Qt.ItemIsUserCheckable | QtCore.Qt.ItemIsEnabled)
+                    item.setCheckState(QtCore.Qt.Unchecked)
+                self.lupulo_tb.setItem(row, column, item) 
 
         for row, text in enumerate(tabelas.get('Adjunto')):
             for column, data in enumerate(text):
-                self.adjunto_tb.setItem(row, column, QTableWidgetItem(str(data)))  
+                item = QTableWidgetItem(str(data))
+                if column == 0:
+                    item.setFlags(QtCore.Qt.ItemIsUserCheckable | QtCore.Qt.ItemIsEnabled)
+                    item.setCheckState(QtCore.Qt.Unchecked)
+                self.adjunto_tb.setItem(row, column, item)
 
         for row, text in enumerate(tabelas.get('Levedura')):
             for column, data in enumerate(text):
-                self.levedura_tb.setItem(row, column, QTableWidgetItem(str(data)))                                                        
+                item = QTableWidgetItem(str(data))
+                if column == 0:
+                    item.setFlags(QtCore.Qt.ItemIsUserCheckable | QtCore.Qt.ItemIsEnabled)
+                    item.setCheckState(QtCore.Qt.Unchecked)
+                self.levedura_tb.setItem(row, column, item)    
+
+    def criar_receita(self):
+        pass                                                  
 
 if __name__ == "__main__":
 
     db = Data_base()
     db.connect()
     db.create_tables()
+
+  
+    #pesquisar_insumo_tbx
 
     app = QApplication(sys.argv)
     window = MainWindow()

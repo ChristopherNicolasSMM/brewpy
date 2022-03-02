@@ -2293,8 +2293,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_11 = QVBoxLayout(self.view_malte_tab)
         self.verticalLayout_11.setObjectName(u"verticalLayout_11")
         self.malte_tb = QTableWidget(self.view_malte_tab)
-        if (self.malte_tb.columnCount() < 17):
-            self.malte_tb.setColumnCount(17)
+        if (self.malte_tb.columnCount() < 16):
+            self.malte_tb.setColumnCount(16)
         __qtablewidgetitem8 = QTableWidgetItem()
         self.malte_tb.setHorizontalHeaderItem(0, __qtablewidgetitem8)
         __qtablewidgetitem9 = QTableWidgetItem()
@@ -2327,8 +2327,6 @@ class Ui_MainWindow(object):
         self.malte_tb.setHorizontalHeaderItem(14, __qtablewidgetitem22)
         __qtablewidgetitem23 = QTableWidgetItem()
         self.malte_tb.setHorizontalHeaderItem(15, __qtablewidgetitem23)
-        __qtablewidgetitem24 = QTableWidgetItem()
-        self.malte_tb.setHorizontalHeaderItem(16, __qtablewidgetitem24)
         self.malte_tb.setObjectName(u"malte_tb")
         self.malte_tb.setStyleSheet(u"")
         self.malte_tb.setEditTriggers(QAbstractItemView.AnyKeyPressed|QAbstractItemView.DoubleClicked)
@@ -2343,28 +2341,26 @@ class Ui_MainWindow(object):
         self.verticalLayout_12 = QVBoxLayout(self.view_lupulo_tab)
         self.verticalLayout_12.setObjectName(u"verticalLayout_12")
         self.lupulo_tb = QTableWidget(self.view_lupulo_tab)
-        if (self.lupulo_tb.columnCount() < 10):
-            self.lupulo_tb.setColumnCount(10)
+        if (self.lupulo_tb.columnCount() < 9):
+            self.lupulo_tb.setColumnCount(9)
+        __qtablewidgetitem24 = QTableWidgetItem()
+        self.lupulo_tb.setHorizontalHeaderItem(0, __qtablewidgetitem24)
         __qtablewidgetitem25 = QTableWidgetItem()
-        self.lupulo_tb.setHorizontalHeaderItem(0, __qtablewidgetitem25)
+        self.lupulo_tb.setHorizontalHeaderItem(1, __qtablewidgetitem25)
         __qtablewidgetitem26 = QTableWidgetItem()
-        self.lupulo_tb.setHorizontalHeaderItem(1, __qtablewidgetitem26)
+        self.lupulo_tb.setHorizontalHeaderItem(2, __qtablewidgetitem26)
         __qtablewidgetitem27 = QTableWidgetItem()
-        self.lupulo_tb.setHorizontalHeaderItem(2, __qtablewidgetitem27)
+        self.lupulo_tb.setHorizontalHeaderItem(3, __qtablewidgetitem27)
         __qtablewidgetitem28 = QTableWidgetItem()
-        self.lupulo_tb.setHorizontalHeaderItem(3, __qtablewidgetitem28)
+        self.lupulo_tb.setHorizontalHeaderItem(4, __qtablewidgetitem28)
         __qtablewidgetitem29 = QTableWidgetItem()
-        self.lupulo_tb.setHorizontalHeaderItem(4, __qtablewidgetitem29)
+        self.lupulo_tb.setHorizontalHeaderItem(5, __qtablewidgetitem29)
         __qtablewidgetitem30 = QTableWidgetItem()
-        self.lupulo_tb.setHorizontalHeaderItem(5, __qtablewidgetitem30)
+        self.lupulo_tb.setHorizontalHeaderItem(6, __qtablewidgetitem30)
         __qtablewidgetitem31 = QTableWidgetItem()
-        self.lupulo_tb.setHorizontalHeaderItem(6, __qtablewidgetitem31)
+        self.lupulo_tb.setHorizontalHeaderItem(7, __qtablewidgetitem31)
         __qtablewidgetitem32 = QTableWidgetItem()
-        self.lupulo_tb.setHorizontalHeaderItem(7, __qtablewidgetitem32)
-        __qtablewidgetitem33 = QTableWidgetItem()
-        self.lupulo_tb.setHorizontalHeaderItem(8, __qtablewidgetitem33)
-        __qtablewidgetitem34 = QTableWidgetItem()
-        self.lupulo_tb.setHorizontalHeaderItem(9, __qtablewidgetitem34)
+        self.lupulo_tb.setHorizontalHeaderItem(8, __qtablewidgetitem32)
         self.lupulo_tb.setObjectName(u"lupulo_tb")
 
         self.verticalLayout_12.addWidget(self.lupulo_tb)
@@ -2375,36 +2371,34 @@ class Ui_MainWindow(object):
         self.verticalLayout_13 = QVBoxLayout(self.view_levedura_tab)
         self.verticalLayout_13.setObjectName(u"verticalLayout_13")
         self.levedura_tb = QTableWidget(self.view_levedura_tab)
-        if (self.levedura_tb.columnCount() < 14):
-            self.levedura_tb.setColumnCount(14)
+        if (self.levedura_tb.columnCount() < 13):
+            self.levedura_tb.setColumnCount(13)
+        __qtablewidgetitem33 = QTableWidgetItem()
+        self.levedura_tb.setHorizontalHeaderItem(0, __qtablewidgetitem33)
+        __qtablewidgetitem34 = QTableWidgetItem()
+        self.levedura_tb.setHorizontalHeaderItem(1, __qtablewidgetitem34)
         __qtablewidgetitem35 = QTableWidgetItem()
-        self.levedura_tb.setHorizontalHeaderItem(0, __qtablewidgetitem35)
+        self.levedura_tb.setHorizontalHeaderItem(2, __qtablewidgetitem35)
         __qtablewidgetitem36 = QTableWidgetItem()
-        self.levedura_tb.setHorizontalHeaderItem(1, __qtablewidgetitem36)
+        self.levedura_tb.setHorizontalHeaderItem(3, __qtablewidgetitem36)
         __qtablewidgetitem37 = QTableWidgetItem()
-        self.levedura_tb.setHorizontalHeaderItem(2, __qtablewidgetitem37)
+        self.levedura_tb.setHorizontalHeaderItem(4, __qtablewidgetitem37)
         __qtablewidgetitem38 = QTableWidgetItem()
-        self.levedura_tb.setHorizontalHeaderItem(3, __qtablewidgetitem38)
+        self.levedura_tb.setHorizontalHeaderItem(5, __qtablewidgetitem38)
         __qtablewidgetitem39 = QTableWidgetItem()
-        self.levedura_tb.setHorizontalHeaderItem(4, __qtablewidgetitem39)
+        self.levedura_tb.setHorizontalHeaderItem(6, __qtablewidgetitem39)
         __qtablewidgetitem40 = QTableWidgetItem()
-        self.levedura_tb.setHorizontalHeaderItem(5, __qtablewidgetitem40)
+        self.levedura_tb.setHorizontalHeaderItem(7, __qtablewidgetitem40)
         __qtablewidgetitem41 = QTableWidgetItem()
-        self.levedura_tb.setHorizontalHeaderItem(6, __qtablewidgetitem41)
+        self.levedura_tb.setHorizontalHeaderItem(8, __qtablewidgetitem41)
         __qtablewidgetitem42 = QTableWidgetItem()
-        self.levedura_tb.setHorizontalHeaderItem(7, __qtablewidgetitem42)
+        self.levedura_tb.setHorizontalHeaderItem(9, __qtablewidgetitem42)
         __qtablewidgetitem43 = QTableWidgetItem()
-        self.levedura_tb.setHorizontalHeaderItem(8, __qtablewidgetitem43)
+        self.levedura_tb.setHorizontalHeaderItem(10, __qtablewidgetitem43)
         __qtablewidgetitem44 = QTableWidgetItem()
-        self.levedura_tb.setHorizontalHeaderItem(9, __qtablewidgetitem44)
+        self.levedura_tb.setHorizontalHeaderItem(11, __qtablewidgetitem44)
         __qtablewidgetitem45 = QTableWidgetItem()
-        self.levedura_tb.setHorizontalHeaderItem(10, __qtablewidgetitem45)
-        __qtablewidgetitem46 = QTableWidgetItem()
-        self.levedura_tb.setHorizontalHeaderItem(11, __qtablewidgetitem46)
-        __qtablewidgetitem47 = QTableWidgetItem()
-        self.levedura_tb.setHorizontalHeaderItem(12, __qtablewidgetitem47)
-        __qtablewidgetitem48 = QTableWidgetItem()
-        self.levedura_tb.setHorizontalHeaderItem(13, __qtablewidgetitem48)
+        self.levedura_tb.setHorizontalHeaderItem(12, __qtablewidgetitem45)
         self.levedura_tb.setObjectName(u"levedura_tb")
 
         self.verticalLayout_13.addWidget(self.levedura_tb)
@@ -2415,24 +2409,22 @@ class Ui_MainWindow(object):
         self.verticalLayout_14 = QVBoxLayout(self.view_adjunto_tab)
         self.verticalLayout_14.setObjectName(u"verticalLayout_14")
         self.adjunto_tb = QTableWidget(self.view_adjunto_tab)
-        if (self.adjunto_tb.columnCount() < 8):
-            self.adjunto_tb.setColumnCount(8)
+        if (self.adjunto_tb.columnCount() < 7):
+            self.adjunto_tb.setColumnCount(7)
+        __qtablewidgetitem46 = QTableWidgetItem()
+        self.adjunto_tb.setHorizontalHeaderItem(0, __qtablewidgetitem46)
+        __qtablewidgetitem47 = QTableWidgetItem()
+        self.adjunto_tb.setHorizontalHeaderItem(1, __qtablewidgetitem47)
+        __qtablewidgetitem48 = QTableWidgetItem()
+        self.adjunto_tb.setHorizontalHeaderItem(2, __qtablewidgetitem48)
         __qtablewidgetitem49 = QTableWidgetItem()
-        self.adjunto_tb.setHorizontalHeaderItem(0, __qtablewidgetitem49)
+        self.adjunto_tb.setHorizontalHeaderItem(3, __qtablewidgetitem49)
         __qtablewidgetitem50 = QTableWidgetItem()
-        self.adjunto_tb.setHorizontalHeaderItem(1, __qtablewidgetitem50)
+        self.adjunto_tb.setHorizontalHeaderItem(4, __qtablewidgetitem50)
         __qtablewidgetitem51 = QTableWidgetItem()
-        self.adjunto_tb.setHorizontalHeaderItem(2, __qtablewidgetitem51)
+        self.adjunto_tb.setHorizontalHeaderItem(5, __qtablewidgetitem51)
         __qtablewidgetitem52 = QTableWidgetItem()
-        self.adjunto_tb.setHorizontalHeaderItem(3, __qtablewidgetitem52)
-        __qtablewidgetitem53 = QTableWidgetItem()
-        self.adjunto_tb.setHorizontalHeaderItem(4, __qtablewidgetitem53)
-        __qtablewidgetitem54 = QTableWidgetItem()
-        self.adjunto_tb.setHorizontalHeaderItem(5, __qtablewidgetitem54)
-        __qtablewidgetitem55 = QTableWidgetItem()
-        self.adjunto_tb.setHorizontalHeaderItem(6, __qtablewidgetitem55)
-        __qtablewidgetitem56 = QTableWidgetItem()
-        self.adjunto_tb.setHorizontalHeaderItem(7, __qtablewidgetitem56)
+        self.adjunto_tb.setHorizontalHeaderItem(6, __qtablewidgetitem52)
         self.adjunto_tb.setObjectName(u"adjunto_tb")
 
         self.verticalLayout_14.addWidget(self.adjunto_tb)
@@ -2837,106 +2829,98 @@ class Ui_MainWindow(object):
         self.pesquisar_insumo_btn.setText(QCoreApplication.translate("MainWindow", u"Pesquisar", None))
         self.label_3.setText("")
         ___qtablewidgetitem8 = self.malte_tb.horizontalHeaderItem(0)
-        ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"C\u00f3digo", None));
+        ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"Nome", None));
         ___qtablewidgetitem9 = self.malte_tb.horizontalHeaderItem(1)
-        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"Nome", None));
+        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"Origem", None));
         ___qtablewidgetitem10 = self.malte_tb.horizontalHeaderItem(2)
-        ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"Origem", None));
+        ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"Fabricante", None));
         ___qtablewidgetitem11 = self.malte_tb.horizontalHeaderItem(3)
-        ___qtablewidgetitem11.setText(QCoreApplication.translate("MainWindow", u"Fabricante", None));
+        ___qtablewidgetitem11.setText(QCoreApplication.translate("MainWindow", u"Tipo", None));
         ___qtablewidgetitem12 = self.malte_tb.horizontalHeaderItem(4)
-        ___qtablewidgetitem12.setText(QCoreApplication.translate("MainWindow", u"Tipo", None));
+        ___qtablewidgetitem12.setText(QCoreApplication.translate("MainWindow", u"Qnt. Max %", None));
         ___qtablewidgetitem13 = self.malte_tb.horizontalHeaderItem(5)
-        ___qtablewidgetitem13.setText(QCoreApplication.translate("MainWindow", u"Qnt. Max %", None));
+        ___qtablewidgetitem13.setText(QCoreApplication.translate("MainWindow", u"Cor SRM", None));
         ___qtablewidgetitem14 = self.malte_tb.horizontalHeaderItem(6)
-        ___qtablewidgetitem14.setText(QCoreApplication.translate("MainWindow", u"Cor SRM", None));
+        ___qtablewidgetitem14.setText(QCoreApplication.translate("MainWindow", u"Pre\u00e7o", None));
         ___qtablewidgetitem15 = self.malte_tb.horizontalHeaderItem(7)
-        ___qtablewidgetitem15.setText(QCoreApplication.translate("MainWindow", u"Pre\u00e7o", None));
+        ___qtablewidgetitem15.setText(QCoreApplication.translate("MainWindow", u"Ext.IBU %", None));
         ___qtablewidgetitem16 = self.malte_tb.horizontalHeaderItem(8)
-        ___qtablewidgetitem16.setText(QCoreApplication.translate("MainWindow", u"Ext.IBU %", None));
+        ___qtablewidgetitem16.setText(QCoreApplication.translate("MainWindow", u"Poten.SG %", None));
         ___qtablewidgetitem17 = self.malte_tb.horizontalHeaderItem(9)
-        ___qtablewidgetitem17.setText(QCoreApplication.translate("MainWindow", u"Poten.SG %", None));
+        ___qtablewidgetitem17.setText(QCoreApplication.translate("MainWindow", u"Diastatico", None));
         ___qtablewidgetitem18 = self.malte_tb.horizontalHeaderItem(10)
-        ___qtablewidgetitem18.setText(QCoreApplication.translate("MainWindow", u"Diastatico", None));
+        ___qtablewidgetitem18.setText(QCoreApplication.translate("MainWindow", u"Prote\u00edna %", None));
         ___qtablewidgetitem19 = self.malte_tb.horizontalHeaderItem(11)
-        ___qtablewidgetitem19.setText(QCoreApplication.translate("MainWindow", u"Prote\u00edna %", None));
+        ___qtablewidgetitem19.setText(QCoreApplication.translate("MainWindow", u"Aproveitamento %", None));
         ___qtablewidgetitem20 = self.malte_tb.horizontalHeaderItem(12)
-        ___qtablewidgetitem20.setText(QCoreApplication.translate("MainWindow", u"Aproveitamento %", None));
+        ___qtablewidgetitem20.setText(QCoreApplication.translate("MainWindow", u"Mostura", None));
         ___qtablewidgetitem21 = self.malte_tb.horizontalHeaderItem(13)
-        ___qtablewidgetitem21.setText(QCoreApplication.translate("MainWindow", u"Mostura", None));
+        ___qtablewidgetitem21.setText(QCoreApplication.translate("MainWindow", u"Fervura", None));
         ___qtablewidgetitem22 = self.malte_tb.horizontalHeaderItem(14)
-        ___qtablewidgetitem22.setText(QCoreApplication.translate("MainWindow", u"Fervura", None));
+        ___qtablewidgetitem22.setText(QCoreApplication.translate("MainWindow", u"N\u00e3o Ferment\u00e1vel", None));
         ___qtablewidgetitem23 = self.malte_tb.horizontalHeaderItem(15)
-        ___qtablewidgetitem23.setText(QCoreApplication.translate("MainWindow", u"N\u00e3o Ferment\u00e1vel", None));
-        ___qtablewidgetitem24 = self.malte_tb.horizontalHeaderItem(16)
-        ___qtablewidgetitem24.setText(QCoreApplication.translate("MainWindow", u"Observa\u00e7\u00f5es", None));
+        ___qtablewidgetitem23.setText(QCoreApplication.translate("MainWindow", u"Observa\u00e7\u00f5es", None));
         self.insumos_tbw.setTabText(self.insumos_tbw.indexOf(self.view_malte_tab), QCoreApplication.translate("MainWindow", u"Malte", None))
-        ___qtablewidgetitem25 = self.lupulo_tb.horizontalHeaderItem(0)
-        ___qtablewidgetitem25.setText(QCoreApplication.translate("MainWindow", u"C\u00f3digo", None));
-        ___qtablewidgetitem26 = self.lupulo_tb.horizontalHeaderItem(1)
-        ___qtablewidgetitem26.setText(QCoreApplication.translate("MainWindow", u"Nome", None));
-        ___qtablewidgetitem27 = self.lupulo_tb.horizontalHeaderItem(2)
-        ___qtablewidgetitem27.setText(QCoreApplication.translate("MainWindow", u"Origem", None));
-        ___qtablewidgetitem28 = self.lupulo_tb.horizontalHeaderItem(3)
-        ___qtablewidgetitem28.setText(QCoreApplication.translate("MainWindow", u"Fabricante", None));
-        ___qtablewidgetitem29 = self.lupulo_tb.horizontalHeaderItem(4)
-        ___qtablewidgetitem29.setText(QCoreApplication.translate("MainWindow", u"Tipo", None));
-        ___qtablewidgetitem30 = self.lupulo_tb.horizontalHeaderItem(5)
-        ___qtablewidgetitem30.setText(QCoreApplication.translate("MainWindow", u"Formato", None));
-        ___qtablewidgetitem31 = self.lupulo_tb.horizontalHeaderItem(6)
-        ___qtablewidgetitem31.setText(QCoreApplication.translate("MainWindow", u"Alfa A %", None));
-        ___qtablewidgetitem32 = self.lupulo_tb.horizontalHeaderItem(7)
-        ___qtablewidgetitem32.setText(QCoreApplication.translate("MainWindow", u"Beta A. %", None));
-        ___qtablewidgetitem33 = self.lupulo_tb.horizontalHeaderItem(8)
-        ___qtablewidgetitem33.setText(QCoreApplication.translate("MainWindow", u"Pre\u00e7o", None));
-        ___qtablewidgetitem34 = self.lupulo_tb.horizontalHeaderItem(9)
-        ___qtablewidgetitem34.setText(QCoreApplication.translate("MainWindow", u"Observa\u00e7\u00f5es", None));
+        ___qtablewidgetitem24 = self.lupulo_tb.horizontalHeaderItem(0)
+        ___qtablewidgetitem24.setText(QCoreApplication.translate("MainWindow", u"Nome", None));
+        ___qtablewidgetitem25 = self.lupulo_tb.horizontalHeaderItem(1)
+        ___qtablewidgetitem25.setText(QCoreApplication.translate("MainWindow", u"Origem", None));
+        ___qtablewidgetitem26 = self.lupulo_tb.horizontalHeaderItem(2)
+        ___qtablewidgetitem26.setText(QCoreApplication.translate("MainWindow", u"Fabricante", None));
+        ___qtablewidgetitem27 = self.lupulo_tb.horizontalHeaderItem(3)
+        ___qtablewidgetitem27.setText(QCoreApplication.translate("MainWindow", u"Tipo", None));
+        ___qtablewidgetitem28 = self.lupulo_tb.horizontalHeaderItem(4)
+        ___qtablewidgetitem28.setText(QCoreApplication.translate("MainWindow", u"Formato", None));
+        ___qtablewidgetitem29 = self.lupulo_tb.horizontalHeaderItem(5)
+        ___qtablewidgetitem29.setText(QCoreApplication.translate("MainWindow", u"Alfa A %", None));
+        ___qtablewidgetitem30 = self.lupulo_tb.horizontalHeaderItem(6)
+        ___qtablewidgetitem30.setText(QCoreApplication.translate("MainWindow", u"Beta A. %", None));
+        ___qtablewidgetitem31 = self.lupulo_tb.horizontalHeaderItem(7)
+        ___qtablewidgetitem31.setText(QCoreApplication.translate("MainWindow", u"Pre\u00e7o", None));
+        ___qtablewidgetitem32 = self.lupulo_tb.horizontalHeaderItem(8)
+        ___qtablewidgetitem32.setText(QCoreApplication.translate("MainWindow", u"Observa\u00e7\u00f5es", None));
         self.insumos_tbw.setTabText(self.insumos_tbw.indexOf(self.view_lupulo_tab), QCoreApplication.translate("MainWindow", u"L\u00fapulo", None))
-        ___qtablewidgetitem35 = self.levedura_tb.horizontalHeaderItem(0)
-        ___qtablewidgetitem35.setText(QCoreApplication.translate("MainWindow", u"C\u00f3digo", None));
-        ___qtablewidgetitem36 = self.levedura_tb.horizontalHeaderItem(1)
-        ___qtablewidgetitem36.setText(QCoreApplication.translate("MainWindow", u"Nome", None));
-        ___qtablewidgetitem37 = self.levedura_tb.horizontalHeaderItem(2)
-        ___qtablewidgetitem37.setText(QCoreApplication.translate("MainWindow", u"Sigla", None));
-        ___qtablewidgetitem38 = self.levedura_tb.horizontalHeaderItem(3)
-        ___qtablewidgetitem38.setText(QCoreApplication.translate("MainWindow", u"Laborat\u00f3rio", None));
-        ___qtablewidgetitem39 = self.levedura_tb.horizontalHeaderItem(4)
-        ___qtablewidgetitem39.setText(QCoreApplication.translate("MainWindow", u"Pre\u00e7o", None));
-        ___qtablewidgetitem40 = self.levedura_tb.horizontalHeaderItem(5)
-        ___qtablewidgetitem40.setText(QCoreApplication.translate("MainWindow", u"Formato", None));
-        ___qtablewidgetitem41 = self.levedura_tb.horizontalHeaderItem(6)
-        ___qtablewidgetitem41.setText(QCoreApplication.translate("MainWindow", u"Flocula\u00e7\u00e3o %", None));
-        ___qtablewidgetitem42 = self.levedura_tb.horizontalHeaderItem(7)
-        ___qtablewidgetitem42.setText(QCoreApplication.translate("MainWindow", u"Viabilidade %", None));
-        ___qtablewidgetitem43 = self.levedura_tb.horizontalHeaderItem(8)
-        ___qtablewidgetitem43.setText(QCoreApplication.translate("MainWindow", u"(g) pacote", None));
-        ___qtablewidgetitem44 = self.levedura_tb.horizontalHeaderItem(9)
-        ___qtablewidgetitem44.setText(QCoreApplication.translate("MainWindow", u"Celulas (b-uni)", None));
-        ___qtablewidgetitem45 = self.levedura_tb.horizontalHeaderItem(10)
-        ___qtablewidgetitem45.setText(QCoreApplication.translate("MainWindow", u"Atenua\u00e7\u00e3o %", None));
-        ___qtablewidgetitem46 = self.levedura_tb.horizontalHeaderItem(11)
-        ___qtablewidgetitem46.setText(QCoreApplication.translate("MainWindow", u"Temperatura %", None));
-        ___qtablewidgetitem47 = self.levedura_tb.horizontalHeaderItem(12)
-        ___qtablewidgetitem47.setText(QCoreApplication.translate("MainWindow", u"Fam\u00edlia", None));
-        ___qtablewidgetitem48 = self.levedura_tb.horizontalHeaderItem(13)
-        ___qtablewidgetitem48.setText(QCoreApplication.translate("MainWindow", u"Observa\u00e7\u00f5es", None));
+        ___qtablewidgetitem33 = self.levedura_tb.horizontalHeaderItem(0)
+        ___qtablewidgetitem33.setText(QCoreApplication.translate("MainWindow", u"Nome", None));
+        ___qtablewidgetitem34 = self.levedura_tb.horizontalHeaderItem(1)
+        ___qtablewidgetitem34.setText(QCoreApplication.translate("MainWindow", u"Sigla", None));
+        ___qtablewidgetitem35 = self.levedura_tb.horizontalHeaderItem(2)
+        ___qtablewidgetitem35.setText(QCoreApplication.translate("MainWindow", u"Laborat\u00f3rio", None));
+        ___qtablewidgetitem36 = self.levedura_tb.horizontalHeaderItem(3)
+        ___qtablewidgetitem36.setText(QCoreApplication.translate("MainWindow", u"Pre\u00e7o", None));
+        ___qtablewidgetitem37 = self.levedura_tb.horizontalHeaderItem(4)
+        ___qtablewidgetitem37.setText(QCoreApplication.translate("MainWindow", u"Formato", None));
+        ___qtablewidgetitem38 = self.levedura_tb.horizontalHeaderItem(5)
+        ___qtablewidgetitem38.setText(QCoreApplication.translate("MainWindow", u"Flocula\u00e7\u00e3o %", None));
+        ___qtablewidgetitem39 = self.levedura_tb.horizontalHeaderItem(6)
+        ___qtablewidgetitem39.setText(QCoreApplication.translate("MainWindow", u"Viabilidade %", None));
+        ___qtablewidgetitem40 = self.levedura_tb.horizontalHeaderItem(7)
+        ___qtablewidgetitem40.setText(QCoreApplication.translate("MainWindow", u"(g) pacote", None));
+        ___qtablewidgetitem41 = self.levedura_tb.horizontalHeaderItem(8)
+        ___qtablewidgetitem41.setText(QCoreApplication.translate("MainWindow", u"Celulas (b-uni)", None));
+        ___qtablewidgetitem42 = self.levedura_tb.horizontalHeaderItem(9)
+        ___qtablewidgetitem42.setText(QCoreApplication.translate("MainWindow", u"Atenua\u00e7\u00e3o %", None));
+        ___qtablewidgetitem43 = self.levedura_tb.horizontalHeaderItem(10)
+        ___qtablewidgetitem43.setText(QCoreApplication.translate("MainWindow", u"Temperatura %", None));
+        ___qtablewidgetitem44 = self.levedura_tb.horizontalHeaderItem(11)
+        ___qtablewidgetitem44.setText(QCoreApplication.translate("MainWindow", u"Fam\u00edlia", None));
+        ___qtablewidgetitem45 = self.levedura_tb.horizontalHeaderItem(12)
+        ___qtablewidgetitem45.setText(QCoreApplication.translate("MainWindow", u"Observa\u00e7\u00f5es", None));
         self.insumos_tbw.setTabText(self.insumos_tbw.indexOf(self.view_levedura_tab), QCoreApplication.translate("MainWindow", u"Levedura", None))
-        ___qtablewidgetitem49 = self.adjunto_tb.horizontalHeaderItem(0)
-        ___qtablewidgetitem49.setText(QCoreApplication.translate("MainWindow", u"C\u00f3digo", None));
-        ___qtablewidgetitem50 = self.adjunto_tb.horizontalHeaderItem(1)
-        ___qtablewidgetitem50.setText(QCoreApplication.translate("MainWindow", u"Nome", None));
-        ___qtablewidgetitem51 = self.adjunto_tb.horizontalHeaderItem(2)
-        ___qtablewidgetitem51.setText(QCoreApplication.translate("MainWindow", u"Tipo", None));
-        ___qtablewidgetitem52 = self.adjunto_tb.horizontalHeaderItem(3)
-        ___qtablewidgetitem52.setText(QCoreApplication.translate("MainWindow", u"Fabricante", None));
-        ___qtablewidgetitem53 = self.adjunto_tb.horizontalHeaderItem(4)
-        ___qtablewidgetitem53.setText(QCoreApplication.translate("MainWindow", u"Max. Litro", None));
-        ___qtablewidgetitem54 = self.adjunto_tb.horizontalHeaderItem(5)
-        ___qtablewidgetitem54.setText(QCoreApplication.translate("MainWindow", u"Pre\u00e7o", None));
-        ___qtablewidgetitem55 = self.adjunto_tb.horizontalHeaderItem(6)
-        ___qtablewidgetitem55.setText(QCoreApplication.translate("MainWindow", u"Indica\u00e7\u00e3o Breve", None));
-        ___qtablewidgetitem56 = self.adjunto_tb.horizontalHeaderItem(7)
-        ___qtablewidgetitem56.setText(QCoreApplication.translate("MainWindow", u"Observa\u00e7\u00f5es", None));
+        ___qtablewidgetitem46 = self.adjunto_tb.horizontalHeaderItem(0)
+        ___qtablewidgetitem46.setText(QCoreApplication.translate("MainWindow", u"Nome", None));
+        ___qtablewidgetitem47 = self.adjunto_tb.horizontalHeaderItem(1)
+        ___qtablewidgetitem47.setText(QCoreApplication.translate("MainWindow", u"Tipo", None));
+        ___qtablewidgetitem48 = self.adjunto_tb.horizontalHeaderItem(2)
+        ___qtablewidgetitem48.setText(QCoreApplication.translate("MainWindow", u"Fabricante", None));
+        ___qtablewidgetitem49 = self.adjunto_tb.horizontalHeaderItem(3)
+        ___qtablewidgetitem49.setText(QCoreApplication.translate("MainWindow", u"Max. Litro", None));
+        ___qtablewidgetitem50 = self.adjunto_tb.horizontalHeaderItem(4)
+        ___qtablewidgetitem50.setText(QCoreApplication.translate("MainWindow", u"Pre\u00e7o", None));
+        ___qtablewidgetitem51 = self.adjunto_tb.horizontalHeaderItem(5)
+        ___qtablewidgetitem51.setText(QCoreApplication.translate("MainWindow", u"Indica\u00e7\u00e3o Breve", None));
+        ___qtablewidgetitem52 = self.adjunto_tb.horizontalHeaderItem(6)
+        ___qtablewidgetitem52.setText(QCoreApplication.translate("MainWindow", u"Observa\u00e7\u00f5es", None));
         self.insumos_tbw.setTabText(self.insumos_tbw.indexOf(self.view_adjunto_tab), QCoreApplication.translate("MainWindow", u"Adjunto", None))
         self.label_2.setText("")
         self.exportar_insumo_btn.setText(QCoreApplication.translate("MainWindow", u"Exportar", None))
